@@ -14,7 +14,7 @@ const DEMOS = [
   { file: "/dario-amodei-dwarkesh.mp3", label: "Dario Amodei — Dwarkesh", lang: "en" },
   { file: "/Alejandro-Dolina.mp3", label: "Alejandro Dolina", lang: "es" },
   { file: "/Coscu-caja-negra.mp3", label: "Coscu — Caja Negra", lang: "es" },
-  { file: "/Joaquin-Levinton-Piti-Fernández-y-Mono-de-Kapanga-con-Julio-Leiva.mp3", label: "Levinton, Piti & Mono — Julio Leiva", lang: "es" },
+  { file: "/Joaquin-Levinton-Piti-Fernandez-y-Mono-de-Kapanga-con-Julio-Leiva.mp3", label: "Levinton, Piti & Mono — Julio Leiva", lang: "es" },
 ];
 
 const BIG_FIVE_LABELS: [keyof import("@/app/api/conversation/route").BigFive, string][] = [
