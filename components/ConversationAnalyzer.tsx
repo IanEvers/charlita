@@ -253,7 +253,7 @@ export default function ConversationAnalyzer() {
         setCacheHit("transcript");
       } else {
         setPhase("transcribing");
-        const absoluteUrl = `${window.location.origin}${demo.file}`;
+        const absoluteUrl = new URL(demo.file, window.location.origin).href;
         const res = await fetch("/api/transcribe", {
           method: "POST",
           headers: { "Content-Type": "application/json", "x-language": demo.lang },
