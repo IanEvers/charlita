@@ -227,7 +227,8 @@ export default function ConversationAnalyzer() {
       setPhase("error");
       return;
     }
-    const name = `recording_${Date.now()}.webm`;
+    const now = new Date();
+    const name = `grabacion_${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}_${String(now.getHours()).padStart(2,"0")}-${String(now.getMinutes()).padStart(2,"0")}`;
     setUploadedFileName(name);
     await analyzeBlob(blob, name);
   };
